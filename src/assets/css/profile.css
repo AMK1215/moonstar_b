@@ -1,0 +1,19 @@
+.profileBg{
+     margin-top: -20px;
+    background: #201650;
+    min-height:60vh;
+ }
+ .profileImg{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+ }
+.customInput{
+    border: none;
+    border-bottom: 1px solid gainsboro;
+    outline: none;
+    color: white;
+}
+.customInputTitle{
+    color: gainsboro;
+}

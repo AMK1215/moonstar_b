@@ -1,0 +1,78 @@
+.footer{
+    position: fixed;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    width: 480px;
+    height: max-content;
+    color: white;
+    z-index: 99;
+    margin: auto;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.footerCol{
+    width:20%;
+    font-size: 15px;
+}
+.promoFooter{
+    width: 40px;
+    height: 40px;
+    margin: -10px 0 -4px 0;
+}
+.footerImg{
+    width: 25px;
+    height: 25px;
+}
+.logo{
+    height: 30px;
+    width: auto;
+}
+.nav{
+    background: #201650;
+}
+.btn1{
+    background: #4D4573;
+}
+.btn2{
+    background: #9933FF;
+}
+.footerProviderImg{
+    height: 40px;
+    width: auto;
+}
+.navProfile{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+.moneyImg{
+    width: 25px;
+    height: 25px;
+}
+@media screen and (max-width:480px) {
+    .footer{
+        width: 100%;
+    }
+}
+@media screen and (max-width:430px) {
+    .footerImg{
+        width: 20px;
+        height: 20px;
+    }
+    .footerCol{
+        font-size: 14px;
+    }
+    .promoFooter{
+        width: 30px;
+        height: 30px;
+    }
+}
+@media screen and (max-width:350px){
+    
+    .footerImg{
+        width: 16px;
+        height: 16px;
+    }
+     
+}

@@ -1,0 +1,133 @@
+.gameTabsHeading{
+    overflow-x: scroll;
+}
+.gameTabsHeading::-webkit-scrollbar{
+    display: none;
+}
+.gameTabImg{
+    width: 25px;
+    height: 25px;
+    margin: auto;
+}
+.gameTab{
+    background: #4D4573;
+}
+.gameTabName{
+    text-wrap: nowrap !important;
+    font-size: 14px;
+}
+.gameProviders{
+    overflow-x: scroll;
+}
+.gameProviders::-webkit-scrollbar{
+    display: none;
+}
+.providerTab{
+    cursor: pointer;
+    border: 1px solid #6745CA;
+}
+.activeProviderTab{
+    border: 2px solid #FFB300;
+    background: linear-gradient(90deg, #AC66C9, #B06C91, #9545A6);
+ }
+ .gameImg{
+    height: 100px;
+    border: 2px solid #6844D9;
+  }
+  
+  
+ 
+.providerImg{
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+}
+.providerText{
+    text-wrap: nowrap !important;
+}
+.gameName{
+    text-wrap: nowrap;
+    font-size: 12px;
+ }
+.homeGamesContainer{
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+ min-height: max-content !important;
+}
+ 
+/* width */
+.homeGamesContainer::-webkit-scrollbar {
+    width: 10px;
+    height: 8px;
+   }
+  
+  /* Track */
+  .homeGamesContainer::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 8px;
+    height: 8px;
+
+  }
+   
+  /* Handle */
+  .homeGamesContainer::-webkit-scrollbar-thumb {
+    background: #6844D9; 
+    border-radius: 8px;
+    height: 8px;
+
+  }
+  .homeGame{
+    min-width: 90px;
+    min-height: 90px;
+    max-width: 90px;
+    max-height: max-content;
+   }
+  .homeGameImg{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #6844D9;
+  }
+ 
+  @media screen and (max-width:480px){
+    
+    .gameImg{
+        height: 80px;
+     }
+     
+    .gameName{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:400px){
+    .homeGame{
+        min-width: 80px;
+        max-width: 80px;
+        min-height: 80px;
+        max-height: max-content;
+    }
+}
+@media screen and (max-width:380px) {
+    .gameTabName{
+            font-size: 13px;
+    }
+       
+}
+@media screen and (max-width:360px) {
+    .gameName{
+            font-size: 11px;
+    }
+       
+}
+@media screen and (max-width:370px){
+    .gameImg{
+        height: 70px;
+    }
+}
+@media screen and (max-width:330px){
+    .gameImg{
+        height: 60px;
+    } 
+    .gameName{
+        font-size: 10px;
+}
+}
