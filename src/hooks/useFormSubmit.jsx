@@ -29,6 +29,8 @@ const useFormSubmit = () => {
       if (!res.ok) {
         if (res.status === 422) {
           setError(data.errors);
+        }if(res.status === 401) {
+          setErrMsg(data.message);
         }else {
           setError("An unexpected error occurred.");
         }
@@ -47,7 +49,7 @@ const useFormSubmit = () => {
     }
   };
 
-  return { inputSubmit, error, loading };
+  return { inputSubmit, error, loading, errMsg };
 };
 
 export default useFormSubmit;

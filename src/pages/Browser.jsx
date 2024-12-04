@@ -9,7 +9,7 @@ export default function Browser() {
     const  { content } = useContext(LanguageContext);
     const [name, setName] = useState("");
     const { data: games, loading } = useFetch(BASE_URL + "/gameFilter?name=" + name);
-    console.log(games)
+    // console.log(games)
 
     return (
         <>

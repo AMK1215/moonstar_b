@@ -19,7 +19,7 @@ const WithDrawPage = () => {
       setPayment(bank && banks[0]?.id);
   }, [bank]);
 
-  const { inputSubmit, error, loading } = useFormSubmit();
+  const { inputSubmit, error, loading, errMsg } = useFormSubmit();
 
   const withdraw = async (e) => {
     e.preventDefault();
@@ -63,6 +63,7 @@ const WithDrawPage = () => {
             value={account_name}
           />
           {error && error.account_name && <span className='text-danger'>{error.account_name}</span>}
+          {errMsg && <span className='text-danger'>{errMsg}</span>}
         </div>
         <div className="mb-3">
           <small className="customInputTitle">Account No</small>
