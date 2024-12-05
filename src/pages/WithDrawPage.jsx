@@ -63,7 +63,7 @@ const WithDrawPage = () => {
             value={account_name}
           />
           {error && error.account_name && <span className='text-danger'>{error.account_name}</span>}
-          {errMsg && <span className='text-danger'>{errMsg}</span>}
+          
         </div>
         <div className="mb-3">
           <small className="customInputTitle">Account No</small>
@@ -82,6 +82,7 @@ const WithDrawPage = () => {
             value={amount}
           />
           {error && error.amount && <span className='text-danger'>{error.amount}</span>}
+          {errMsg && <span className='text-danger'>{errMsg}</span>}
         </div>
 
         <div className="mb-3">
